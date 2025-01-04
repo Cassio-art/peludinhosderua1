@@ -1,0 +1,258 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peludinhos de Rua</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="deixalindo.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        h1, h2, h3 {
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        /* Garantindo que o título principal seja branco */
+        .titulo-principal {
+            color: white;
+        }
+        .navbar-brand { 
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        .nav-link {
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #f8f9fa;
+        }
+        /* Cabeçalho com fundo rosa */
+        header {
+            background-color: #ff70c3;
+        }
+        .navbar-brand, .nav-link {
+            color: white;
+        }
+        /* Barra do rodapé com fundo rosa */
+        .footer-bar {
+            background-color: #ff70c3;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+        .img-agua {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid black;
+            border-radius: 3px;
+            display: block;
+            margin: 0 auto;
+        }
+        .video-fluid {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid black;
+            border-radius: 10px;
+            display: block;
+            margin: 20px auto;
+        }
+        .cooler {
+            max-width: 100%;
+            width: 300px;
+            height: auto;
+            border: 2px solid black;
+            border-radius: 3px;
+            display: block;
+            margin: 0 auto;
+        }
+        .imagem-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .imagem-container img {
+            width: 45%;
+            height: auto;
+            border: 2px solid black;
+            border-radius: 3px;
+            margin: 10px;
+        }
+        .img-planta {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border: 2px solid black;
+            border-radius: 3px;
+        }
+
+        /* Estilo para o botão sobre e o modal "Quem somos" */
+        #sobre-link {
+            color: white !important;
+        }
+
+        /* Mudando cor do botão quando ativo */
+        .nav-link:focus, .nav-link:active {
+            color: #ff70c3 !important;
+        }
+
+        .modal-header {
+            background-color: #ff70c3 !important;
+            color: white;
+        }
+
+        /* Media Queries para responsividade */
+        @media (max-width: 768px) {
+            .navbar-collapse {
+                text-align: center;
+            }
+            .imagem-container img {
+                width: 90%;
+            }
+            .img-agua, .video-fluid {
+                max-width: 90%;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            .footer-bar {
+                font-size: 0.9rem;
+            }
+            /* Estilo para os botões fixos */
+            .botao-fixo {
+                position: fixed;
+                bottom: 20px;
+                left: 10px;
+                background-color: #ff70c3;
+                color: white;
+                border: 2px solid #ff70c3;
+                border-radius: 50px;
+                padding: 15px 30px;
+                font-weight: bold;
+                font-size: 1rem;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: background-color 0.3s, transform 0.3s;
+            }
+            .botao-fixo:hover {
+                background-color: white;
+                color: #ff70c3;
+                transform: translateY(-5px);
+            }
+            .botao-fixo + .botao-fixo {
+                left: 120px; /* Botão "Contato" ao lado do "Sobre" */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">Peludinhos de Rua</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="sobre-link" data-toggle="modal" data-target="#sobre-modal">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="contato-link" data-toggle="modal" data-target="#contato-modal">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-center mt-4">
+            <h1 class="titulo-principal">Peludinhos de Rua</h1>
+            <p class="frase-impacto">"Transforme vidas com amor e cuidado!"</p>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+        <!-- Conteúdo principal -->
+        <section class="mt-4">
+            <div class="beneficio mb-4">
+                <h3>Missão</h3>
+                <p>Promover o bem estar e a proteção dos animais de rua, arrecadando recursos e conscientizando a população sobre a importância da adoção, cuidados e respeito aos animais.</p>
+            </div>
+
+            <div class="beneficio mb-4">
+                <h3>Valores</h3>
+                <p>Colocamos o bem estar dos animais em primeiro lugar e buscamos sensibilizar a sociedade sobre suas necessidades.</p>
+            </div>
+
+            <div class="beneficio mb-4">
+                <h3>Visão</h3>
+                <p>Ser reconhecido como um evento referência na promoção dos direitos dos animais.</p>
+            </div>
+
+            <div class="beneficio mb-4">
+                <h3>Organograma</h3>
+                <img src="organograma.jpeg" alt="Redução de Pesticidas" class="img-fluid img-planta">
+            </div>
+        </section>
+
+        <button onclick="topFunction()" id="myBtn" title="Voltar ao topo">🔝</button>
+    </main>
+
+    <footer class="footer-bar">
+        <p>&copy; 2024 Peludinhos de Rua. Todos os direitos reservados.</p>
+    </footer>
+   
+    <!-- Modais -->
+    <div class="modal fade" id="sobre-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Quem somos:</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Peludinhos de rua é um evento de caridade que promove o cuidado, a proteção e a adoção responsável de animais.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="contato-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contato:</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Entre em contato conosco através de peludinhosderua@gmail.com ou Instagram peludinhos_de_rua.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {
+            scrollFunction();
+        };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

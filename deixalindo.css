@@ -1,0 +1,119 @@
+/* Estilo geral */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Links de navegação */
+.nav-link {
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #f8f9fa;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ff70c3; /* Rosa */
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+/* Barra do rodapé */
+.footer-bar {
+    background-color: #ff70c3; /* Rosa */
+    color: white; /* Texto branco */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Benefícios */
+.beneficio {
+    border: 2px solid rgb(255, 112, 195);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f8f9fa;
+}
+
+/* Imagens */
+.img_agua, .cooler, .tela-inicial {
+    max-width: 100%;
+    border: 2px solid #000;
+    border-radius: 3px;
+}
+
+.img_agua {
+    width: 200px;
+    height: auto;
+}
+
+.tela-inicial {
+    width: 400px;
+    height: auto;
+}
+
+.cooler {
+    width: 300px;
+    height: auto;
+}
+
+/* Vídeos */
+.video-fluid {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Container de imagens */
+.imagem-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagem-container img {
+    max-width: 48%;
+    height: auto;
+    border: 2px solid #000;
+    border-radius: 3px;
+}
+/* Estilos para o título principal e a frase de impacto */
+.titulo-principal {
+    font-family: 'Poppins', sans-serif;  /* Fonte moderna e legível */
+    font-weight: 600;  /* Peso de fonte intermediário */
+    font-size: 3.5rem;  /* Aumenta o tamanho do título */
+    color: #fcfcfc;  /* Cor vibrante em tom de rosa */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);  /* Sombra suave para destaque */
+    text-transform: uppercase;  /* Maiúsculas para o título */
+    margin-bottom: 20px;  /* Espaçamento inferior */
+}
+
+.frase-impacto {
+    font-family: 'Montserrat', sans-serif;  /* Fonte elegante e moderna */
+    font-weight: 400;  /* Peso mais leve para o subtítulo */
+    font-size: 1.75rem;  /* Tamanho de fonte ajustado */
+    color: #333;  /* Cor escura para boa leitura */
+    line-height: 1.6;  /* Melhor espaçamento entre as linhas */
+    font-style: italic;  /* Deixa a frase em itálico para dar ênfase */
+    max-width: 80%;  /* Limita a largura da frase */
+    margin: 0 auto;  /* Centraliza a frase */
+}
